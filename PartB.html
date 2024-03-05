@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <style>
+        *{
+            font-family:cursive;    
+            color:black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        header, button{
+            background-color: #13b819;
+            padding: 1px;
+        }
+        button{
+            position:fixed;
+            top:20px;
+            right:20px;
+        }
+        nav {
+            background-color: #4a4848;
+            padding: 5px;
+        }
+        .col{
+            background-color: #4a4848; 
+            padding: 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        #imp{
+            font-weight:bold;
+        }
+        a{
+            padding:219px;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+    <p>
+        <h1>Foundations of Artificial Intelligence: Machine Learning, Neural Networks, and Natural Language Processing</h1>
+        <button>Log In</button></p>
+    </header>
+    <nav>
+        <p>
+        <a href="https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/">Machine Learning</a>||
+        <a href="https://www.tensorflow.org/">Neural Networks</a>||
+        <a href="https://www.nltk.org/">Natural Language Processing</a>
+        </p>
+    </nav>
+    <p>Understanding artificial intelligence is crucial for developing intelligent systems that can perceive, reason, and act autonomously in complex environments. Machine learning techniques enable systems to learn patterns from data and make predictions or decisions without explicit programming. Neural networks, inspired by the human brain's structure and function, are powerful models capable of learning complex relationships in data. Natural language processing allows computers to understand, interpret, and generate human language, facilitating communication between humans and machines. Mastering these concepts empowers developers to create intelligent applications across various domains such as healthcare, finance, and robotics.</p>
+    <div class="container">
+        <div class="col">
+            <h2>Machine Learning</h2>
+            <p><span id="imp">Definition: </span> A subset of artificial intelligence that focuses on building systems that can learn from data and make predictions or decisions.</p>
+            <p><span id="imp">Algorithms: </span> Includes regression, classification, clustering, and reinforcement learning algorithms.</p>
+            <p><span id="imp">Applications: </span> Used in recommendation systems, predictive analytics, fraud detection, and autonomous vehicles.</p>
+            <p><span id="imp">Evaluation: </span> Performance is assessed using metrics such as accuracy, precision, recall, and F1 score.</p>
+            <p><span id="imp">Tools: </span> Popular libraries and frameworks include scikit-learn, TensorFlow, and PyTorch.</p>
+        </div>
+        <div class="col">
+            <h2>Neural Networks</h2>
+            <p><span id="imp">Definition: </span> Artificial neural networks are computational models inspired by the structure and function of the human brain.</p>
+            <p><span id="imp">Architecture: </span> Consists of interconnected layers of nodes (neurons) with weighted connections.</p>
+            <p><span id="imp">Activation Functions: </span> Sigmoid, ReLU, and tanh are common activation functions used in neural networks.</p>
+            <p><span id="imp">Training: </span> Involves adjusting the weights of connections through backpropagation to minimize error.</p>
+            <p><span id="imp">Applications: </span> Used in image recognition, natural language processing, and autonomous vehicles.</p>
+        </div>
+        <div class="col">
+            <h2>Natural Language Processing</h2>
+            <p><span id="imp">Definition: </span> NLP is a field of artificial intelligence that focuses on enabling computers to understand, interpret, and generate human language.</p>
+            <p><span id="imp">Techniques: </span> Includes tokenization, stemming, lemmatization, named entity recognition, and sentiment analysis.</p>
+            <p><span id="imp">Applications: </span> Used in chatbots, language translation, text summarization, and sentiment analysis.</p>
+            <p><span id="imp">Tools: </span> Popular libraries and frameworks include NLTK, spaCy, and TensorFlow NLP.</p>
+        </div>
+    </div>
+</body>
+</html>
